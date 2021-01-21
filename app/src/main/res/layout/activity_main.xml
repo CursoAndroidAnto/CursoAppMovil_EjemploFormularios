@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RadioGroup
+        android:id="@+id/rgSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdMorning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="unlockCheckOptions"
+            android:text="@string/option_morning" />
+
+        <RadioButton
+            android:id="@+id/rdAfternoon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="unlockCheckOptions"
+            android:text="@string/option_afternoon" />
+
+        <RadioButton
+            android:id="@+id/rdIndifferent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="lockCheckOptions"
+            android:text="@string/option_indiff" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkNet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/option_net"
+        android:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/chkJava"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/option_java" />
+
+    <CheckBox
+        android:id="@+id/chkOracle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/option_oracle" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="saveOptions"
+        android:text="@string/save" />
+</LinearLayout>

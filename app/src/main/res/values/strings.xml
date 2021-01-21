@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EjemploFormularios</string>
+    <string name="option_net">.NET</string>
+    <string name="option_java">Java</string>
+    <string name="option_oracle">Oracle</string>
+    <string name="option_morning">Mañana</string>
+    <string name="option_afternoon">Tarde</string>
+    <string name="option_indiff">Indiferente</string>
+    <string name="save">Guardar</string>
+    <string name="close">Cerrar</string>
+</resources>
